@@ -2,7 +2,7 @@
 ## MSSV:20120117- Phạm Nguyễn Khánh Minh
 ## Hướng dẫn: Ths.Lương An Vinh
 
-### workflows
+### Workflows
 
 1. Update config.yaml
 2. Update params.yaml
