@@ -1,4 +1,4 @@
-# Spelling-correction - Đồ án ngôn ngữ học tính toán
+# Vietnamee spelling-correction - Đồ án ngôn ngữ học tính toán
 ## MSSV:20120117- Phạm Nguyễn Khánh Minh
 ## Hướng dẫn: Ths.Lương An Vinh
 
