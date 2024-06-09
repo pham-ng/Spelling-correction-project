@@ -1,5 +1,5 @@
 from SpellingCorrection.config.configuration import ConfigurationManager
-from SpellingCorrection.components.data_ingestion import DataIngestion
+from SpellingCorrection.conponents.data_ingestion import DataIngestion
 from SpellingCorrection.logging import logger
 
 

@@ -1,7 +1,7 @@
 from SpellingCorrection.constants import*
 from SpellingCorrection.utils.common import read_yaml,create_directories
 
-from SpellingCorrection.entity import (DataIngestionConfig)
+from SpellingCorrection.entity import (DataIngestionConfig, DataValidationConfig)
 
 
 
@@ -35,3 +35,18 @@ class ConfigurationManager:
             unzip_dir = config.unzip_dir
         )
         return data_ingestion_config
+    
+    def get_data_validation_config(self)->DataValidationConfig:
+        config = self.config.data_validation
+        create_directories([config.root_dir])
+
+        data_validation_config = DataValidationConfig(
+            root_dir = config.root_dir,
+            STATUS_FILE = config.STATUS_FILE,
+            ALL_REQUIRED_FILE = config.ALL_REQUIRED_FILE
+        )
+        return data_validation_config
+    
+    
+
+

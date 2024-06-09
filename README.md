@@ -1,6 +1,8 @@
-# Spelling-correction-project
+# Spelling-correction - Đồ án ngôn ngữ học tính toán
+## MSSV:20120117- Phạm Nguyễn Khánh Minh
+## Hướng dẫn: Ths.Lương An Vinh
 
-## workflows
+### workflows
 
 1. Update config.yaml
 2. Update params.yaml
