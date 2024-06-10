@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Vietnamee Spelling-Correction-Đồ án ngôn ngữ học tính toán
 ## MSSV: 20120117-Phạm Nguyễn Khánh Minh - GV Hướng dẫn: Ths.Lương An Vinh
+=======
+# Vietnamese spelling correction Đồ án ngôn ngữ học 
+## MSSV: 20120117-Phạm Nguyễn Khánh Minh - GVHD : Th.s Lương An Vinh
+>>>>>>> 605de88f58bbcbd43826f271edc724aa3073156d
 
 ### Workflows
 
