@@ -1,6 +1,5 @@
-# Vietnamee spelling-correction - Đồ án ngôn ngữ học tính toán
-## MSSV:20120117- Phạm Nguyễn Khánh Minh
-## Hướng dẫn: Ths.Lương An Vinh
+# Vietnamee Spelling-Correction-Đồ án ngôn ngữ học tính toán
+## MSSV: 20120117-Phạm Nguyễn Khánh Minh - GV Hướng dẫn: Ths.Lương An Vinh
 
 ### Workflows
 

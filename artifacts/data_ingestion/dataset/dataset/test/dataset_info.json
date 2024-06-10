@@ -2,12 +2,12 @@
   "citation": "",
   "description": "",
   "features": {
-    "text": {
+    "sentence": {
       "dtype": "string",
       "_type": "Value"
     },
-    "__index_level_0__": {
-      "dtype": "int64",
+    "noisy_phrases": {
+      "dtype": "string",
       "_type": "Value"
     }
   },
