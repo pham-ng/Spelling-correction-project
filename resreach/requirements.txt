@@ -20,5 +20,6 @@ uvicorn
 jinja2
 jupyter
 underthesea
+transformers[torch]
 pyvi
 -e .

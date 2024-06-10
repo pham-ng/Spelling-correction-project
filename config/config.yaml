@@ -18,3 +18,9 @@ data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/dataset/dataset
   tokenizer_name: VinAI/bartpho-syllable
+
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_transformation/dataset
+  model_ckpt: VinAI/bartpho-syllable

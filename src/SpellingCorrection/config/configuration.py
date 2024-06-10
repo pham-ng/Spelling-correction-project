@@ -1,7 +1,8 @@
 from SpellingCorrection.constants import*
 from SpellingCorrection.utils.common import read_yaml,create_directories
 
-from SpellingCorrection.entity import (DataIngestionConfig, DataValidationConfig, DataTransformationConfig)
+from SpellingCorrection.entity import (DataIngestionConfig, DataValidationConfig,
+                                       DataTransformationConfig,ModelTrainerConfig)
 
 
 
@@ -57,6 +58,31 @@ class ConfigurationManager:
             tokenizer_name = config.tokenizer_name
             )
             return data_transformation_config
+    
+    
+    def get_model_trainer_config(self)-> ModelTrainerConfig:
+        config= self.config.model_trainer
+        params = self.params.Seq2SeqTrainingArguments
+        create_directories([config.root_dir])
+
+        model_trainer_config= ModelTrainerConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path,
+            model_ckpt = config.model_ckpt,
+
+            evaluation_strategy = params.evaluation_strategy,
+            eval_steps = params.eval_steps,
+            per_device_train_batch_size = params.per_device_train_batch_size,
+            per_device_eval_batch_size = params.per_device_eval_batch_size,
+            num_train_epochs = params.num_train_epochs,
+            save_steps = params.save_steps,
+            save_total_limit = params.save_total_limit,
+            logging_steps = params.logging_steps,
+            predict_with_generate = params.predict_with_generate,
+            fp16 = params.fp16
+            
+        )
+        return model_trainer_config
     
     
 

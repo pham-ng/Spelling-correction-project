@@ -19,6 +19,7 @@ fastapi
 uvicorn
 jinja2
 jupyter
+accelerate -U
 
 pyvi
 -e .

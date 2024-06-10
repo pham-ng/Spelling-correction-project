@@ -24,6 +24,21 @@ class DataTransformationConfig:
     tokenizer_name: Path
 
 
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    data_path: Path
+    model_ckpt: Path
+    eval_strategy: str
+    eval_steps: int
+    per_device_train_batch_size: int
+    per_device_eval_batch_size:  int
+    num_train_epochs: int
+    save_steps: int
+    save_total_limit: int
+    logging_steps: int
+    predict_with_generate: bool
+    fp16: bool
 
 
 
