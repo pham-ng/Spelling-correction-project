@@ -19,7 +19,9 @@ fastapi
 uvicorn
 jinja2
 jupyter
-accelerate -U
+accelerate
+docx
+fpdf
 
 pyvi
 -e .

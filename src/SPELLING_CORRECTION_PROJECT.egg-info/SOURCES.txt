@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/SPELLING_CORRECTION_PROJECT.egg-info/PKG-INFO
+src/SPELLING_CORRECTION_PROJECT.egg-info/SOURCES.txt
+src/SPELLING_CORRECTION_PROJECT.egg-info/dependency_links.txt
+src/SPELLING_CORRECTION_PROJECT.egg-info/top_level.txt

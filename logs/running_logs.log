@@ -1,0 +1,820 @@
+[2024-05-28 02:38:54,720:INFO:main: Hello World]
+[2024-05-28 02:43:36,846 : INFO : main : Hello World]
+[2024-06-09 12:00:42,074 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:00:42,091 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:00:42,097 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 12:00:42,100 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 12:01:03,919 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:01:03,923 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:03:07,480 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:03:07,483 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:06:13,622 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:06:13,625 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:06:50,009 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:06:50,013 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:07:48,219 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:07:48,221 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:08:25,848 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:08:25,851 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:10:27,270 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:10:27,273 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:10:30,678 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Server: GitHub.com
+Date: Sun, 09 Jun 2024 05:10:30 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"fc9c1cadc0de8a8096922f67e8c9ca5a"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com/v1/engines/github-completion/completions *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=662c%2FvzYZ1ic%2BVg6IrkDWUq7fXSm5SBPaLfFK7B2zyVUxkCqD5jzNbZvT6xWnxc8ja%2Be%2FTwlUTKT3MZ9qwGxzjYER%2BxggdHokCaaUdVXKXYMfqXHclCPsoTTfyDT89MDiQufNX2MQaUkqF9KHCV1ZgdTI4pjXPJb6A0OxGouk8b9GMCHWWtNGdPQen%2BAo5iToFU33Fn8J4fA0Ojz%2Fi4732EC3TApeF1ZHm9IV0bcOC53vnWTylcywbLmjAnJxYIHn81hVrsHuWb3MWmaHZNuIA%3D%3D--M4oXmOwr5dTpczzI--%2B99W2d2NNjsURuE1d8RgbQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1012760803.1717909830; Path=/; Domain=github.com; Expires=Mon, 09 Jun 2025 05:10:30 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Mon, 09 Jun 2025 05:10:30 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: F61A:2E9FBD:10CD239:12F5EFE:66653946
+connection: close
+
+]
+[2024-06-09 12:14:26,416 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:14:26,421 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:14:26,427 : INFO : 3822425393 : File already exists of size: 154 KB]
+[2024-06-09 12:14:42,392 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:14:42,393 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:14:42,401 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 12:14:42,402 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 12:14:49,772 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 17763987
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "cbf2b7dbe40803e901ed9593c938d64f57314dd9ddf3bdb6cbaa7dfccdcb41d3"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6D18:2E73EF:1EA814:262094:66653A47
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 05:14:48 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1223-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1717910087.399133,VS0,VE1443
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3b8052964ee7006553fef2c99fbd7679576e58bb
+Expires: Sun, 09 Jun 2024 05:19:48 GMT
+Source-Age: 1
+
+]
+[2024-06-09 12:45:48,622 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 12:45:48,624 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 12:45:48,625 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 12:45:48,625 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 12:45:48,625 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 12:45:55,936 : INFO : data_ingestion : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 17763987
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "cbf2b7dbe40803e901ed9593c938d64f57314dd9ddf3bdb6cbaa7dfccdcb41d3"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6D18:2E73EF:1EA814:262094:66653A47
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 05:45:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1224-QPG
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1717911954.667241,VS0,VE322
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 89bd47c37f8602fa19048bcb28e0e7683d5f3b67
+Expires: Sun, 09 Jun 2024 05:50:53 GMT
+Source-Age: 0
+
+]
+[2024-06-09 12:45:56,471 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-09 15:28:49,455 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:28:49,467 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:28:49,471 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 15:29:46,977 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:29:46,978 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:30:15,730 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:30:15,731 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:31:06,181 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:31:06,182 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:31:46,516 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:31:46,518 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:33:20,191 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:33:20,192 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:50:31,187 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:50:44,699 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:51:49,766 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:52:19,865 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 15:52:19,867 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 15:52:19,868 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 15:52:19,870 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 15:52:19,871 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 15:52:32,133 : INFO : data_ingestion : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 18321325
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "9c24ccbf913a03fd80298ff5f3382fb0c80351145f5b7ac514959e755457532e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3C3C:2EE948:2201BA:2A23E0:66656D48
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 08:52:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1270-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1717923145.954784,VS0,VE1758
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 104aa545868fc559b0b8702512beac973867fba1
+Expires: Sun, 09 Jun 2024 08:57:26 GMT
+Source-Age: 1
+
+]
+[2024-06-09 15:52:32,623 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-09 15:53:02,359 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:53:49,978 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:54:23,729 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:54:55,183 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 15:55:33,618 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 16:26:59,568 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:26:59,570 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:26:59,572 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 16:26:59,573 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 16:27:08,713 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 21859763
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e4b74cd97df8ff6e206c9c6fb37fd0912bcff4183bf7e9e935bd2d8ac3e72e8d"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3F2C:2EC2EF:22D7EA:2B133A:66657569
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 09:27:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1237-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1717925225.133834,VS0,VE1958
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f92b7a58c5bd1246f497ba32069f5e8ae12e9fbb
+Expires: Sun, 09 Jun 2024 09:32:07 GMT
+Source-Age: 2
+
+]
+[2024-06-09 16:28:08,776 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:28:08,780 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:28:08,782 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 16:30:23,644 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:30:23,646 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:30:23,654 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 16:32:43,368 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:32:43,370 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:43:03,141 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:43:03,156 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:43:03,162 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 16:45:12,203 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:45:12,205 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:46:30,347 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:46:30,349 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:46:30,350 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 16:50:04,138 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:50:04,140 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:51:27,165 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:51:27,167 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:51:27,955 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:51:27,957 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:54:33,844 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 16:54:55,071 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 16:54:56,872 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 16:57:07,578 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:57:07,581 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:57:07,583 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 16:58:43,933 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 16:58:43,935 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 16:58:43,938 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 17:02:01,691 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 17:02:42,678 : ERROR : common : File not found: config\config.yaml]
+[2024-06-09 17:03:38,397 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:03:38,398 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:03:38,400 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 17:04:24,304 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:04:24,306 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:04:40,509 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:04:40,511 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:09:56,416 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:09:56,422 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:11:30,478 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:11:30,479 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:13:01,906 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:13:01,910 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:13:01,911 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 17:52:20,399 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 17:52:20,401 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:52:20,404 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:52:20,405 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 17:52:20,405 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 17:52:29,623 : INFO : data_ingestion : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 21859763
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e4b74cd97df8ff6e206c9c6fb37fd0912bcff4183bf7e9e935bd2d8ac3e72e8d"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B842:2EF377:24EC4D:2D695D:66658969
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 10:52:27 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg120095-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1717930346.751982,VS0,VE1647
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 66e92dadb3b3d226c883fc8aca18a163a507a367
+Expires: Sun, 09 Jun 2024 10:57:27 GMT
+Source-Age: 1
+
+]
+[2024-06-09 17:52:30,128 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-09 17:52:30,129 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 17:52:30,130 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:52:30,131 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:52:30,132 : ERROR : main : An error occurred in Data Validation Stage stage: 'DataValiadtion' object has no attribute 'download_file']
+[2024-06-09 17:57:44,321 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 17:57:44,322 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:57:44,323 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:57:44,323 : INFO : common : Creating the directory: artifacts]
+[2024-06-09 17:57:44,324 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-09 17:57:51,604 : INFO : data_ingestion : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 21859763
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e4b74cd97df8ff6e206c9c6fb37fd0912bcff4183bf7e9e935bd2d8ac3e72e8d"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B842:2EF377:24EC4D:2D695D:66658969
+Accept-Ranges: bytes
+Date: Sun, 09 Jun 2024 10:57:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1283-QPG
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1717930670.517694,VS0,VE343
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a17177fdbe466cf5a4c74fa176a678ca11b0caa3
+Expires: Sun, 09 Jun 2024 11:02:49 GMT
+Source-Age: 0
+
+]
+[2024-06-09 17:57:52,059 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-09 17:57:52,060 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-09 17:57:52,068 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-09 17:57:52,072 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-09 17:57:52,073 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-09 17:57:52,083 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 10:11:40,415 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 10:46:24,388 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 10:46:24,402 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 10:46:24,407 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 10:48:12,562 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 10:48:12,564 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 10:49:53,932 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 10:50:11,519 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 10:50:11,521 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 10:50:11,527 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 10:52:38,506 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 10:53:03,503 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 10:53:03,505 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 10:53:03,508 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 10:57:55,002 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 10:57:59,696 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 10:57:59,698 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 10:57:59,705 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:00:26,940 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:00:30,730 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:00:30,732 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:00:30,733 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:01:57,120 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:02:05,264 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:02:05,266 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:02:05,273 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:03:34,947 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:03:38,491 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:03:38,493 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:03:38,494 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:07:07,008 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:07:07,011 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:07:07,011 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:08:26,445 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:08:26,445 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:11:32,010 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:11:35,223 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:11:35,225 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:11:35,226 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:14:22,782 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:14:26,599 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:14:26,599 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:14:26,615 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 11:16:34,201 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:16:34,203 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:22:22,828 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:22:28,376 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:22:28,378 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:42:37,844 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:42:37,857 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:46:01,458 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:46:01,462 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:47:02,175 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 11:47:07,415 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:47:07,417 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:47:36,160 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:47:36,163 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:47:47,669 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:47:47,672 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:48:10,838 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:48:10,840 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:49:01,696 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:49:01,696 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:49:59,941 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:49:59,943 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:51:25,861 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:51:25,863 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:52:15,004 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:52:15,008 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:52:46,167 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:52:46,168 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:58:24,065 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:58:24,087 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 11:59:36,438 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 11:59:36,441 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:20:56,023 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:20:56,025 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:21:34,104 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:21:34,113 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:46:43,960 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:46:43,963 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:46:43,964 : INFO : common : Creating the directory: artifacts]
+[2024-06-10 12:46:43,965 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-10 12:46:55,715 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 24701085
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "851576fd810ce9df591dcc40b6b44589ba8588c02f9c4c424299a08f2371ad49"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 216E:2E6E5A:328B65:3E51CB:66669349
+Accept-Ranges: bytes
+Date: Mon, 10 Jun 2024 05:46:51 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1262-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1717998410.618542,VS0,VE1966
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 80ffaa699d6b5e366d095f57bffaf535554f2c2c
+Expires: Mon, 10 Jun 2024 05:51:51 GMT
+Source-Age: 2
+
+]
+[2024-06-10 12:47:11,828 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:47:11,829 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:47:11,830 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-10 12:48:01,166 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 12:48:07,534 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:48:07,536 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:48:07,537 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 12:49:30,871 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:49:30,873 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:49:55,035 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:49:55,036 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:50:42,942 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:50:42,944 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 12:51:09,932 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 12:51:09,934 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:00:08,918 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:00:08,921 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:01:05,075 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:01:05,087 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:16:52,918 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:16:52,926 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:32:35,742 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:32:35,752 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:32:35,753 : INFO : common : Creating the directory: artifacts]
+[2024-06-10 13:32:35,755 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-10 13:33:00,826 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 16211735
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b10d1bbc215d724995fc0b6ce42d46021b641d75c3dda7d8cd58c12ab9b3d10d"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8B8E:2EAB57:336087:3F6E7A:66669E09
+Accept-Ranges: bytes
+Date: Mon, 10 Jun 2024 06:32:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hkg17920-HKG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718001161.282696,VS0,VE1501
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8ae14a494cb1ee26030db259198d4f876ccadcd3
+Expires: Mon, 10 Jun 2024 06:37:42 GMT
+Source-Age: 1
+
+]
+[2024-06-10 13:33:37,658 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:33:37,660 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:33:37,661 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-10 13:34:28,074 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 13:34:58,208 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:34:58,211 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:34:58,212 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 13:39:44,985 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:39:44,996 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:44:03,523 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:44:03,535 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 13:45:29,857 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 13:45:29,858 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:18:50,581 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:18:50,586 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:18:50,588 : INFO : common : Creating the directory: artifacts]
+[2024-06-10 14:18:50,589 : INFO : common : Creating the directory: artifacts/data_ingestion]
+[2024-06-10 14:18:53,972 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:18:53,975 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:18:53,977 : INFO : common : Creating the directory: artifacts/data_validation]
+[2024-06-10 14:19:06,361 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 14:19:32,025 : INFO : 3822425393 : artifacts/data_ingestion/dataset.zip downloaded! with following headers: 
+Connection: close
+Content-Length: 16211735
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b10d1bbc215d724995fc0b6ce42d46021b641d75c3dda7d8cd58c12ab9b3d10d"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5004:4FE90:3E53:4942:6666A8DF
+Accept-Ranges: bytes
+Date: Mon, 10 Jun 2024 07:18:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hkg17923-HKG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718003936.896064,VS0,VE1439
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 36ca3dfd3aab6a962d66b55d2df6debe1bfacffe
+Expires: Mon, 10 Jun 2024 07:23:57 GMT
+Source-Age: 1
+
+]
+[2024-06-10 14:19:35,280 : ERROR : common : File not found: config\config.yaml]
+[2024-06-10 14:19:43,040 : ERROR : common : File not found: config\config.yaml]
+[2024-06-10 14:19:54,240 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:19:54,242 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:20:17,525 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 14:20:18,413 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:20:18,417 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:20:18,418 : INFO : common : Creating the directory: artifacts/data_transformation]
+[2024-06-10 14:34:54,963 : INFO : utils : Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-06-10 14:34:54,963 : INFO : utils : NumExpr defaulting to 8 threads.]
+[2024-06-10 14:34:56,539 : INFO : config : PyTorch version 2.3.1 available.]
+[2024-06-10 14:34:59,549 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 14:34:59,551 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:34:59,554 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:34:59,555 : INFO : data_ingestion : File already exists of size: 15832 KB]
+[2024-06-10 14:34:59,806 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 14:34:59,806 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 14:34:59,806 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:34:59,806 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:34:59,806 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 14:34:59,806 : INFO : main : >>>>>>>>> stage  Data Transformation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 14:34:59,820 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 14:34:59,820 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 14:35:37,632 : INFO : main : >>>>>>>>> stage  Data Transformation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 16:09:42,089 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:09:47,193 : INFO : font_manager : generated new fontManager]
+[2024-06-10 16:43:07,214 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:43:07,231 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:45:15,008 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:45:15,010 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:45:15,012 : INFO : common : Creating the directory: artifacts/model_trainer]
+[2024-06-10 16:47:15,028 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:47:20,883 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:47:20,885 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:50:39,094 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:50:39,129 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:52:27,954 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:52:29,275 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:52:29,275 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:56:16,544 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:56:16,548 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:58:20,022 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:58:21,124 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:58:21,129 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:59:00,120 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:59:01,073 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:59:01,073 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 16:59:54,466 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 16:59:55,297 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 16:59:55,300 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:06:54,579 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:06:54,579 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:07:40,944 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 17:08:00,492 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:08:00,493 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:15:09,778 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 17:17:14,046 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 17:17:29,370 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:17:29,376 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:19:01,238 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 17:19:13,877 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:19:13,884 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:25:22,193 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 17:25:35,323 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:25:35,323 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 17:27:46,463 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 17:27:46,467 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:03:12,258 : INFO : utils : Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-06-10 18:03:12,258 : INFO : utils : NumExpr defaulting to 8 threads.]
+[2024-06-10 18:03:12,831 : INFO : config : PyTorch version 2.3.1 available.]
+[2024-06-10 18:03:15,904 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 18:03:15,919 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:03:15,919 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:03:15,919 : INFO : data_ingestion : File already exists of size: 15832 KB]
+[2024-06-10 18:03:16,156 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 18:03:16,156 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 18:03:16,156 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:03:16,156 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:03:16,156 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 18:03:16,156 : INFO : main : >>>>>>>>> stage  Data Transformation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 18:03:16,168 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:03:16,169 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:03:24,740 : INFO : main : >>>>>>>>> stage  Data Transformation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-10 18:03:24,740 : INFO : main : **********************]
+[2024-06-10 18:03:24,740 : INFO : main : >>>>>>>>> stage  Model Training Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-10 18:03:24,742 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:03:24,743 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:10:28,345 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 18:10:44,093 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:10:44,093 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:34:37,383 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 18:34:44,962 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:34:44,965 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:43:20,401 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 18:55:00,624 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:55:00,651 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 18:56:01,589 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 18:56:01,592 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:02:18,393 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:02:24,479 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:02:24,482 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:02:24,484 : INFO : common : Creating the directory: artifacts/model_evaluation]
+[2024-06-10 19:04:45,909 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:04:54,319 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:04:54,321 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:07:51,094 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:07:51,098 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:10:04,171 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:10:05,395 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:10:05,395 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:16:49,277 : ERROR : common : File not found: config\config.yaml]
+[2024-06-10 19:16:52,670 : ERROR : common : File not found: config\config.yaml]
+[2024-06-10 19:17:33,441 : ERROR : common : File not found: config\config.yaml]
+[2024-06-10 19:22:01,627 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:22:03,036 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:22:03,036 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:25:43,708 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:26:00,957 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:26:00,960 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-10 19:28:20,137 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-10 19:28:36,084 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-10 19:28:36,089 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-11 08:37:13,521 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-11 08:37:30,883 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-11 08:37:30,891 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-11 09:15:18,124 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-11 09:15:33,509 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-11 09:15:33,512 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-11 09:17:09,510 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-11 09:17:56,770 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-11 09:17:56,773 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 12:00:30,327 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 12:00:46,822 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 12:00:46,829 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 12:23:57,384 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 12:41:39,943 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 12:41:53,546 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 12:41:53,546 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 12:47:49,835 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 12:47:50,813 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 12:47:50,816 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 13:01:29,742 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 13:01:55,763 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 13:02:11,879 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 13:02:11,882 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 13:56:55,915 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 13:57:11,539 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 13:57:11,542 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 14:08:01,169 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 14:08:29,144 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 14:08:29,147 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 14:48:07,913 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 14:48:28,075 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 14:48:28,080 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 14:49:03,571 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 14:49:03,573 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:14:54,115 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:14:55,634 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:14:55,639 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:16:36,821 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:16:53,260 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:16:53,263 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:18:36,703 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:18:36,707 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:19:24,895 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:19:26,279 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:19:26,286 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:30:22,408 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:35:29,816 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:35:29,823 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:40:58,911 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:41:20,695 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:41:20,697 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:42:17,736 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:42:17,738 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:42:19,581 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:42:19,583 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:42:24,324 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:42:24,328 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:44:58,888 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:45:23,599 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:45:23,603 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:47:17,066 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:47:31,430 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:47:31,432 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:48:21,935 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:49:29,749 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:49:29,768 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:52:08,242 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:52:20,110 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:52:20,110 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:52:59,272 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:53:11,724 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:53:11,727 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:54:42,416 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:56:17,212 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:56:17,219 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:58:01,777 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:58:13,683 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:58:13,685 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 16:59:07,127 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 16:59:21,243 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 16:59:21,252 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:00:15,608 : ERROR : common : File not found: config\config.yaml]
+[2024-06-12 17:00:52,650 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:01:06,566 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:01:06,569 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:02:10,079 : ERROR : common : File not found: config\config.yaml]
+[2024-06-12 17:02:38,046 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:02:39,427 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:02:39,435 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:04:24,035 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:04:36,866 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:04:36,869 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:14:30,317 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:14:31,683 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:14:31,686 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:15:28,990 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:15:44,273 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:15:44,282 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:19:25,683 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:19:26,780 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:19:26,783 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:27:52,402 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:36:30,510 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:41:07,927 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:41:09,882 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:41:09,887 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:41:55,110 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:41:55,131 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:44:52,996 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:44:54,575 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:44:54,575 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:46:04,848 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:46:05,974 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:46:05,977 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:47:08,941 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 17:47:10,057 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:47:10,066 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 17:53:58,111 : INFO : rouge_scorer : Using default tokenizer.]
+[2024-06-12 17:54:55,031 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 17:54:55,040 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 18:04:03,782 : INFO : rouge_scorer : Using default tokenizer.]
+[2024-06-12 18:06:19,338 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 18:06:20,679 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 18:06:20,685 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 18:07:18,859 : INFO : config : PyTorch version 2.3.0 available.]
+[2024-06-12 18:07:19,969 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-12 18:07:19,977 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-12 18:14:05,067 : INFO : rouge_scorer : Using default tokenizer.]
+[2024-06-13 01:37:26,603 : INFO : utils : Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-06-13 01:37:26,604 : INFO : utils : NumExpr defaulting to 8 threads.]
+[2024-06-13 01:37:26,971 : INFO : config : PyTorch version 2.3.1 available.]
+[2024-06-13 01:37:28,661 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-13 01:37:28,664 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-13 01:37:28,667 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-13 01:37:28,668 : INFO : data_ingestion : File already exists of size: 15832 KB]
+[2024-06-13 01:37:28,924 : INFO : main : >>>>>>>>> stage  Data Ingestion Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-13 01:37:28,924 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-13 01:37:28,928 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-13 01:37:28,929 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-13 01:37:28,931 : INFO : main : >>>>>>>>> stage  Data Validation Stage >>>>>>>> completed <<<<<<<<<< 
+
+x========x]
+[2024-06-13 01:37:28,932 : INFO : main : >>>>>>>>> stage  Data Transformation Stage >>>>>>>> started <<<<<<<<<<]
+[2024-06-13 01:37:28,934 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-13 01:37:28,936 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
+[2024-06-13 01:37:38,255 : ERROR : main : An error occurred in Data Transformation Stage stage: [Errno 22] Invalid argument: 'D:/ML/spelling correction/Spelling-correction-project/artifacts/data_transformation/dataset/train/data-00000-of-00001.arrow']
+[2024-06-13 09:02:07,231 : INFO : common : Reading the yaml file from the path: config\config.yaml loaded successfully]
+[2024-06-13 09:02:07,235 : INFO : common : Reading the yaml file from the path: params.yaml loaded successfully]
