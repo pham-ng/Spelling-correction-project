@@ -99,7 +99,7 @@ Email: 20120117@student.hcmus.edu.vn
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
+    - Save the URI: public.ecr.aws/z0w5w8f2/spellingcorrection
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
