@@ -22,6 +22,7 @@ jupyter
 accelerate
 docx
 fpdf
-
+Flask
 pyvi
+
 -e .

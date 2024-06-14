@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Result</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header style="background-color: #004A56;"
+        class="w-full flex flex-col justify-center justify-items-center content-center h-20 rounded-b-lg">
+        <div class="self-center text-white text-2xl">Correction Result</div>
+    </header>
+
+    <section class="flex flex-wrap mt-20 w-full">
+        <div class="w-full md:w-1/2">
+            <textarea style="background-color: #EDFFD2;"
+                class="w-11/12 border-green-600 rounded-lg p-2 border self-center justify-center md:h-3/4" rows="10"
+                cols="30" name="result" readonly>{{output_text}}</textarea>
+        </div>
+    </section>
+    <section class="flex flex-wrap mt-10 w-full">
+        <div class="w-full">
+            <a href="/" class="m-1 bg-green-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg self-center">
+                Go Back
+            </a>
+        </div>
+    </section>
+</body>
+</html>

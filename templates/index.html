@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Spelling Correction</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/static/css/jquery-ui.min.css" rel="stylesheet">
+    <style>
+        #loading-indicator {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            height: 2em;
+            width: 2em;
+            overflow: show;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        #loading-indicator:before {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            margin: 100px auto;
+            animation: sk-rotate 1.2s infinite ease-in-out;
+        }
+
+        @keyframes sk-rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="background-color: #004A56;" class="fixed inset-0 w-full flex flex-col justify-center justify-items-center content-center h-20 rounded-b-lg">
+        <img src="/static/logo.ico" alt="Logo" class="object-contain w-16 self-center md:self-left md:w-30">
+        <div class="self-center text-white">Vietnamese Spelling Correction</div>
+    </header>
+
+    <section class="flex flex-wrap mt-20 w-full">
+        <div class="w-full md:w-1/2">
+            <form id="text-form" class="w-full flex flex-col md:h-screen" action="/predict-text" method="post">
+                <textarea class="w-11/12 md:h-3/4 m-2 p-2 border-black rounded-lg border self-center justify-center" name="text" id="text" cols="30" rows="10" placeholder="Enter your text" required="required"></textarea>
+                <div class="flex self-center">
+                    <button class="m-1 bg-green-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg" type="submit" onclick="showLoading()">Submit</button>
+                    <button class="m-1 bg-red-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg" type="reset">Clear</button>
+                    <button class="m-1 bg-gray-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg" type="button" onclick="document.getElementById('file-upload').click()">Upload File</button>
+                    <input id="file-upload" type="file" accept=".txt, .docx, .pdf" style="display: none;" />
+                </div>
+                <button class="m-1 bg-yellow-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg" type="button" onclick="startTraining()">Train Model</button>
+            </form>
+        </div>
+        <div class="w-full md:w-1/2">
+            <div class="mt-2 flex flex-col w-full md:h-screen">
+                <textarea style="background-color: #EDFFD2;" class="w-11/12 border-green-600 rounded-lg p-2 border self-center justify-center md:h-3/4" rows="10" cols="30" id="result" readonly placeholder="Output will appear here"></textarea>
+                <button class="m-2 bg-blue-400 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg self-center" onclick="copyText()">Copy text</button>
+                <button class="m-2 bg-purple-400 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg self-center" onclick="saveToFile('txt')">Save as .txt</button>
+                <button class="m-2 bg-purple-400 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg self-center" onclick="saveToFile('docx')">Save as .docx</button>
+                <button class="m-2 bg-purple-400 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg self-center" onclick="saveToFile('pdf')">Save as .pdf</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="loading-indicator" class="spinner"></div>
+
+    <script>
+        function showLoading() {
+            document.getElementById("loading-indicator").style.display = "block";
+        }
+
+        function copyText() {
+            var copyText = document.getElementById("result");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+
+        function saveToFile(format) {
+            var text = document.getElementById("result").value;
+            var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+            if (format === 'txt') {
+                saveAs(blob, "predictions.txt");
+            } else if (format === 'docx') {
+                // Use a library like PizZip or docx to save as .docx
+            } else if (format === 'pdf') {
+                // Use a library like jsPDF to save as .pdf
+            }
+        }
+
+        function startTraining() {
+            fetch('/train').then(response => {
+                if (response.ok) {
+                    alert("Training started!");
+                } else {
+                    alert("Error starting training.");
+                }
+            });
+        }
+
+        document.getElementById('file-upload').addEventListener('change', function () {
+            var file = this.files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+            fetch('/upload-file', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.text()).then(result => {
+                document.getElementById('result').value = result;
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+
+</html>
